@@ -29,6 +29,7 @@ document.querySelector("button").addEventListener("click", () => {
   link.href = randomMenu.place_url;  // 원하는 URL로 변경
   link.textContent = "식당 정보가 궁금하다면?";  // 링크 텍스트
   link.target="_blank"
+  
   // 링크 스타일링 (선택사항)
   link.style.color = '#3674B5';
   link.style.textDecoration = 'underline';
