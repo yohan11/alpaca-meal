@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #c2f1fc, #02c4f5);
+  font-family: "Jua", sans-serif;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+button {
+  margin-top: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button img {
+  width: 100px;
+  height: 100px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.menu {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 30px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* ✨ 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* 메뉴가 나타날 때 */
+.menu.show {
+  opacity: 1;
+  transform: translateY(0);
+}
