@@ -8,11 +8,11 @@ let link; // a 태그를 저장할 변수
 document.querySelector("button").addEventListener("click", () => {
   const menuElement = document.querySelector(".menu");
   const randomMenu = lunchMenus[Math.floor(Math.random() * lunchMenus.length)];
-
+console.log(randomMenu)
   const menuDescriptionElement = document.querySelector(".menu_description");
 
   menuElement.textContent = `오늘은 ${randomMenu.place_name} 가는 거 어때요?`;
-  menuDescriptionElement.textContent = `${randomMenu.place_name}은(는) ${randomMenu.category_name.split(">")[randomMenu.category_name.split(">").length - 1]}을 팔아요. 우리 회사에서 ${randomMenu.distance}m 떨어져 있네요^^ 걸어서 약 ${((randomMenu.distance / 5000) * 60).toFixed(0)}분 걸려요!`;
+  menuDescriptionElement.textContent = `${randomMenu.place_name}은(는) ${randomMenu.category_name.split(">")[randomMenu.category_name.split(">").length - 1]}을(를) 팔아요. 우리 회사에서 ${randomMenu.distance}m 떨어져 있네요^^ 걸어서 약 ${((randomMenu.distance / 5000) * 60).toFixed(0)}분 걸려요!`;
   
   menuElement.classList.add("show"); // 애니메이션 적용
   menuDescriptionElement.classList.add("show"); // 애니메이션 적용
