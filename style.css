@@ -96,3 +96,7 @@ button img {
   opacity: 1;
   transform: translateY(0);
 }
+
+.menu_description {
+  margin-top: 2rem;
+}
