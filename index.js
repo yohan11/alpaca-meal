@@ -8,7 +8,7 @@ let link; // a 태그를 저장할 변수
 document.querySelector("button").addEventListener("click", () => {
   const menuElement = document.querySelector(".menu");
   const randomMenu = lunchMenus[Math.floor(Math.random() * lunchMenus.length)];
-console.log(randomMenu)
+
   const menuDescriptionElement = document.querySelector(".menu_description");
 
   menuElement.textContent = `오늘은 ${randomMenu.place_name} 가는 거 어때요?`;
