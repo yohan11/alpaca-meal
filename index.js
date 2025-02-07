@@ -1,7 +1,6 @@
-import KAKAO_KEY from './config/appkey.js';
 import menuData from './data.json' with { type: "json" };
 "./appkey.js";
-const API_KEY  = KAKAO_KEY
+// const API_KEY  = KAKAO_KEY
 
 const lunchMenus = menuData
 
@@ -38,7 +37,7 @@ document.querySelector("button").addEventListener("click", () => {
   link.style.fontSize = '18px';
 
   document.body.appendChild(link);
-  initializeMap(randomMenu);
+  // initializeMap(randomMenu);
 });
 
 
