@@ -140,4 +140,4 @@ loadKakaoMapScript()
   };
   initializeMap(defaultLocation); // randomMenu 객체를 사용하여 초기화
 })
-    .catch(error => console.error(error));
+.catch(error => console.error(error));
