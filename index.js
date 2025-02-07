@@ -1,6 +1,7 @@
-import config from "./appkey.js";
+import KAKAO_KEY from './config/appkey.js';
 import menuData from './data.json' with { type: "json" };
-const {API_KEY}  = config
+"./appkey.js";
+const API_KEY  = KAKAO_KEY
 
 const lunchMenus = menuData
 
