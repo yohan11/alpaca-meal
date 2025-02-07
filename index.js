@@ -1,6 +1,6 @@
 import config from "./appkey.js";
 import menuData from './data.json' with { type: "json" };
-const API_KEY  = config.API_KEY || process.env.API_KEY;
+const {API_KEY}  = config
 
 const lunchMenus = menuData
 
